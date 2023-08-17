@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(38, 38, 38);
+  color: white;
+}
+.progress-bar {
+    height: 3px;
+    background-color: rgb(38, 38, 38);
+    animation: progress 1s linear;
+}
+@keyframes progress {
+    0% {
+        background-color: rgb(224, 36, 36);
+        width: 0vw;
+    }
+    50% {
+        background-color: rgb(224, 36, 36);
+        width: 70vw;
+    }
+    100% {
+        width: 100vw;
+        background-color: rgb(224, 36, 36);
+  }
+}
+.title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 25px;
+  margin: 30px 30px;
+}
+.todo-input-boxes {
+  display: grid;
+  grid-template-columns: 200px 170px 120px;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  align-items: stretch;
+  margin-left: 70px;
+  margin-bottom: 10px;
+}
+.check-box{
+  height: 20px;
+  width: 20px;
+}
+.todo-list {
+  display: grid;
+  grid-template-columns: 20px 200px 170px 120px;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  margin-left: 30px;
+  align-items: center;
+}
+.input-box,
+.due-date-box {
+  /* border: none; */
+  font-size: 20px;
+  padding: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.add-button {
+  background-color: rgb(28, 144, 28);
+  color: white;
+  border: none;
+  font-size: 15px;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+.add-button:hover {
+  background-color: rgb(146, 188, 38);
+}
+.delete-button {
+  background-color: rgb(162, 50, 50);
+  color: white;
+  border: none;
+  font-size: 15px;
+  padding: 10px 0px;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+.delete-button:hover {
+  background-color: rgb(218, 24, 24);
+}
+
+.strikethrough{
+  text-decoration: line-through;
+}
